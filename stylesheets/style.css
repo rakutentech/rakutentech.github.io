@@ -109,13 +109,8 @@ section {
   text-align: left;
 }
 
-.rak-projects .card{
-  height: 370px;
-}
-
 .card-header {
-  width: 272px;
-  height: 52px;
+  width: 100%;
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   background-color: #bf0000;
@@ -146,8 +141,7 @@ section {
 }
 
 .card-body {
-  width: 272px;
-  height: 229px;
+  min-height: 229px;
   background-color: #f1f2f2;
 }
 
@@ -156,6 +150,7 @@ section {
   padding-top: 24px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 24px;
 }
 
 .card a {
@@ -163,7 +158,7 @@ section {
 }
 
 .card-even {
-  width: 272px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -176,7 +171,7 @@ section {
 }
 
 .card-odd {
-  width: 272px;
+  width: 100%;
   background-color: #f1f2f2;
 }
 
@@ -438,6 +433,7 @@ section {
     -moz-box-shadow:    0px 0px 20px 6px #ccc;
     -webkit-box-shadow: 0px 0px 20px 6px #ccc;
     box-shadow:         0px 0px 20px 6px #ccc;
+  
   }
 
   .rak-fcb-logo {
