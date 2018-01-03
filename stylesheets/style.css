@@ -51,8 +51,12 @@ section {
   background-size:100% 100%;
 }
 
-.github-button {
+.head-body {
+  width: 212px;
   margin: auto;
+}
+
+.github-button {
   padding-top: 8px;
   padding-bottom: 8px;
   font-size: 14px;
@@ -60,25 +64,24 @@ section {
   line-height: 1.5;
   letter-spacing: normal;
   text-align: center;
-}
-
-.github-button a {
-  color: #ffffff;
-}
-
-.head-body {
   width: 212px;
   height: 40px;
   border-radius: 4px;
   background-color: #bf0000;
   margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
-.head-body:hover {
+.head-body a {
+  color: #ffffff;
+}
+
+.github-button:hover {
   background-color: #ff1212;
 }
 
-.head-body:active {
+.github-button:active {
   text-decoration: none;
   background-color: #960000;
 }
