@@ -286,7 +286,7 @@ section {
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
 
-  width: 1200px;
+  width: 1150px;
   justify-content: space-evenly;
   padding-left: 0;
 }
@@ -503,7 +503,8 @@ section {
     background-image: url("../images/rak_fcb_logo/rakuten-fcb-logo.svg");
     background-repeat: no-repeat;
     height: 90px;
-    width: 195px;
+    width: 160px;
+    margin-top: 14px;
   }
 
   .fcb-banner {
