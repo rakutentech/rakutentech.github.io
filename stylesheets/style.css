@@ -48,7 +48,7 @@ section {
   object-fit: contain;
 
   background-image: url("../images/rakuten-tri-bar.png");
-  background-size:100% 100%;
+  background-size: 100% auto;
 }
 
 .head-body {
@@ -329,6 +329,7 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
+    justify-content: center;
   }
 
   .card {
@@ -375,14 +376,13 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .card {
     background-color: #f1f2f2; 
     width: 272px;
-    margin-right: 20px;
-    margin-bottom: 66px;  
+    margin: 30px;
     -moz-box-shadow:    0px 0px 20px 6px #ccc;
     -webkit-box-shadow: 0px 0px 20px 6px #ccc;
     box-shadow:         0px 0px 20px 6px #ccc;
@@ -426,12 +426,12 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
+    justify-content: center;
   }
   
   .card {
     background-color: #f1f2f2;
-    margin-right: 20px;
-    margin-bottom: 66px;  
+    margin: 20px; 
     width: 272px;
     -moz-box-shadow:    0px 0px 20px 6px #ccc;
     -webkit-box-shadow: 0px 0px 20px 6px #ccc;
@@ -487,12 +487,12 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
+    justify-content: center;
   }
 
   .card {
     background-color: #f1f2f2;
-    margin-right: 60px;
-    margin-bottom: 66px;  
+    margin: 20px;
     width: 272px;
     -moz-box-shadow:    0px 0px 20px 6px #ccc;
     -webkit-box-shadow: 0px 0px 20px 6px #ccc;
