@@ -32,7 +32,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  margin-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
   padding-left: 9%;
   padding-right: 9%;
 }
@@ -41,14 +42,6 @@ section {
   width: 100%;
   height: 5px;
   background-color: #bf0000;
-}
-
-.color-bar-bottom {
-  height: 3em;
-  object-fit: contain;
-
-  background-image: url("../images/rakuten-tri-bar.png");
-  background-size: 100% auto;
 }
 
 .head-body {
@@ -90,7 +83,6 @@ section {
   width: 100%;
   height: 401px;
   background-color: #353535;
-  padding-bottom: 39px;
 }
 
 .title {
@@ -321,6 +313,15 @@ section {
     padding-bottom: 11em;
   }
 
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
   .card-set {
     display: -webkit-box;
     display: -moz-box;
@@ -366,6 +367,15 @@ section {
     margin-right: auto;
     padding-top: 3.81em;
     padding-bottom: 11em;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-tablet.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 
   .card-set {
@@ -416,6 +426,15 @@ section {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-desktop.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
 
   .card-set {
@@ -477,6 +496,15 @@ section {
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-desktop-L.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
   }
   
   .card-set {
