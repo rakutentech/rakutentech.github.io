@@ -405,6 +405,10 @@ section {
     width: 195px;
     order: 1;
   }
+
+  .rak-partner-links {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 1080px){
