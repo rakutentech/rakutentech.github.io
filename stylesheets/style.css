@@ -32,10 +32,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  padding-left: 9%;
-  padding-right: 9%;
+  max-width: 1250px;
+  margin: 100px auto 50px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .color-bar-top {
@@ -330,7 +330,7 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .card {
@@ -386,7 +386,7 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .card {
@@ -449,7 +449,7 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
   
   .card {
@@ -519,7 +519,7 @@ section {
     display: flex;
     
     -webkit-flex-flow: row wrap;
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   .card {
