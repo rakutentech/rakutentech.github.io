@@ -1,126 +1,551 @@
-@charset "UTF-8";
-#wall {
-	background: url(../images/bg-washi.jpg) repeat 50% 0;
+a:link {
+  text-decoration: none;
+  color: #2f73c2;
 }
 
-#logo  {
-	overflow: hidden;
-	line-height: 42px;
-}
-#logo img {
-	float: left;
-}
-#logo span {
-	margin-top: 10px;
+a:visited {
+  text-decoration: none;
+  color: #2f73c2;
 }
 
-.main_content {
-	margin: 0px auto;
-	width: 747px;
-	padding-top: 25px;
+a:hover {
+  text-decoration: none;
+  color: #124b8f;
 }
+
+a:active {
+  text-decoration: none;
+  color: #124b8f;
+}
+
+body {    
+  font-family: Noto Sans, sans-serif;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #ededed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: RakutenGlobal-B;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+section {
+  max-width: 1250px;
+  margin: 100px auto 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.color-bar-top {
+  width: 100%;
+  height: 5px;
+  background-color: #bf0000;
+}
+
+.head-body {
+  width: 212px;
+  margin: auto;
+}
+
+.github-button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  width: 212px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #bf0000;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.head-body a {
+  color: #ffffff;
+}
+
+.github-button:hover {
+  background-color: #ff1212;
+}
+
+.github-button:active {
+  text-decoration: none;
+  background-color: #960000;
+}
+
+.rak-masthead {
+  width: 100%;
+  height: 401px;
+  background-color: #353535;
+}
+
 .title {
-	overflow: hidden;
-	background: url(../images/title_line.jpg) no-repeat 100% 100%;
-	margin-top: 40px;
-	padding: 0 5px 5px;
-	font-weight: bold;
-}
-.title h2 {
-	display: inline;
-	font-size: 30px;
-}
-.title span {
-	float: right;
-	margin-bottom: 10px;
-	padding-top: 15px;
-	font-weight: normal;
-	font-size: 13px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
 }
 
-.title_lead {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.main_content .title_lead p {
-	padding: 5px;
-}
-
-.main_content .category {
-	background: #FFFFFF;
-	padding-top: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	padding-left: 30px;
-	margin: 0px 5px 20px 5px;
-}
-.category h3  {
-	padding-top: 10px;
-	margin-bottom: 0px;
-	font-size: 18px;
+.intro {
+  font-family: RakutenGlobal-R;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
 }
 
-.category ul li {
-	background: url("../images/list_icon.jpg") no-repeat 0 40%;
-	list-style-type: none;
-	margin: 10px 15px;
-	padding-left: 15px;
-}
-.category ul {
-	margin: 15px;
-	list-style-position: inside;
+.card-header {
+  width: 100%;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  background-color: #bf0000;
+  display: inline-flex;
 }
 
-#mail_link {
-	margin-top: 10px;
-	float: right;
-}
-#head {
-	clear: both;
-	height: 60px;
-	margin: 10px auto;
-	width:100%;
-}
-#head_content {
-	clear: both;
-	height: 60px;
-	margin: 0px auto;
-	width:747px;
-	background-color: #FFFFFF;
+.card-header img {
+  padding-top: 10px;
+  padding-left: 16px;
+  width: 35px;
+  height: 35px;
 }
 
-#logo {
-	float: left;
+.card-header h4{
+  padding-top: 16px;
+  padding-left: 16px;
+  width: 242px;
+  height: 21px;
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
 }
 
-#foot {
-	height: 40px;
-	background: url(../images/foot_line.png) repeat-x 50% 0;
-	margin-top: 80px;
-	padding-top: 40px;
-	text-align: center;
-	color: #FFFFFF;
-	font-size: small;
-}
-#nav {
-	width: 100%;
-	height: 76px;
-	background: url(../images/head_full.png) repeat-x 50% 0;
-}
-#fix {
-	width: 100%;
-	background: #FFFFFF;
-	margin-bottom: 55px;
+.card-body {
+  min-height: 229px;
+  background-color: #f1f2f2;
 }
 
-#fix.fixed {
-    position: fixed;
-	width: 100%;
-	background: #FFFFFF;
-    left: 0;
-    top: 0;
+.card-body p {
+  margin: 0;
+  padding-top: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 24px;
 }
-.main_content p {
-	padding: 5px 5px 5px 0px;
-	line-height: 1.5;
+
+.card a {
+  font-size: 14px;
+}
+
+.card-even {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.card-even p {
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 11px;
+}
+
+.card-odd {
+  width: 100%;
+  background-color: #f1f2f2;
+}
+
+.card-odd p {
+  margin: 0;
+  padding-top: 11px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 11px;
+  background-color: #f1f2f2;
+}
+
+.footer-logo {
+  object-fit: contain;
+  background-image: url("../images/rakuten-logo-footer.svg");
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
+.rak-footer {
+  background-color: #353535;
+  padding-top: 50px;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 50px;
+  color: #ffffff;
+}
+
+.rak-footer h5 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.rak-footer p {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.rak-footer a {
+  color: #4b91e3;
+}
+
+.footer-links {
+  float:none; 
+  display: inline-block;
+  padding-right: 60px;
+}
+
+.fcb-banner:before, .fcb-banner:after {
+  content: ' ';
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
+  min-height: 300px;
+  width: 50%;
+  position: absolute;
+  z-index: -1;
+}
+
+.fcb-banner:before {
+  background-image: url("../images/rak_fcb_logo/fcb_banner_left.jpg");
+  left: 0;
+}
+
+.fcb-banner:after {
+  background-image: url("../images/rak_fcb_logo/fcb_banner_right.jpg");
+  right: 0;
+}
+
+.rak-partners {
+  padding-top: 20px;
+  padding-left: 9%;
+  padding-right: 9%;
+  padding-bottom: 20px;
+  background-color: #ffffff;
+}
+
+.rak-partner-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.rak-partner-links {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+
+  width: 1150px;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+.rak-partner-container li {
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  list-style: none;
+  padding-right: 10px;
+}
+
+.rak-partner-container a {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 240px) {
+  
+  .head-title {
+    font-size: 34px;
+    font-weight: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .rak-masthead .container {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.81em;
+    padding-bottom: 11em;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .card-set {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    /* justify-content: center; */
+  }
+
+  .card {
+    background-color: #f1f2f2; 
+    width: 272px;
+    margin-bottom: 66px;  
+    -moz-box-shadow:    0px 0px 20px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 6px #ccc;
+    box-shadow:         0px 0px 20px 6px #ccc;
+  }
+
+  .rak-fcb-logo {
+    background-image: url("../images/rak_fcb_logo/rakuten-fcb-logo.svg");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 195px;
+    order: 1;
+  }
+}
+
+@media screen and (min-width: 240px) and (max-width: 480px) {
+  .head-title {
+    font-size: 52px;
+    font-weight: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .rak-masthead .container {
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.81em;
+    padding-bottom: 11em;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-tablet.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .card-set {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    /* justify-content: center; */
+  }
+
+  .card {
+    background-color: #f1f2f2; 
+    width: 272px;
+    margin: 30px;
+    -moz-box-shadow:    0px 0px 20px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 6px #ccc;
+    box-shadow:         0px 0px 20px 6px #ccc;
+  }
+
+  .rak-fcb-logo {
+    background-image: url("../images/rak_fcb_logo/rakuten-fcb-logo.svg");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 195px;
+    order: 1;
+  }
+
+  .rak-partner-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1080px){
+  .rak-masthead .container {
+    width: 400px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.81em;
+    padding-bottom: 11em;
+  }
+
+  .head-title {
+    font-size: 66px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-desktop.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .card-set {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    /* justify-content: center; */
+  }
+  
+  .card {
+    background-color: #f1f2f2;
+    margin: 20px; 
+    width: 272px;
+    -moz-box-shadow:    0px 0px 20px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 6px #ccc;
+    box-shadow:         0px 0px 20px 6px #ccc;
+  
+  }
+
+  .rak-fcb-logo {
+    background-image: url("../images/rak_fcb_logo/rakuten-fcb-logo.svg");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 195px;
+  }
+
+  .fcb-banner {
+    background-image: url("../images/fcb_banner/fcb-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: auto;
+    min-height: 200px;
+    max-height: 300px;
+    /* width: 1200px; */
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .rak-masthead .container {
+    width: 400px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.81em;
+    padding-bottom: 11em;
+  }
+
+  .head-title {
+    font-size: 66px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.14;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .color-bar-bottom {
+    height: 4em;
+    object-fit: contain;
+  
+    background-image: url("../images/bottom_head_bar/rakuten-tri-bar-desktop-L.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  
+  .card-set {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    /* justify-content: center; */
+  }
+
+  .card {
+    background-color: #f1f2f2;
+    margin: 20px;
+    width: 272px;
+    -moz-box-shadow:    0px 0px 20px 6px #ccc;
+    -webkit-box-shadow: 0px 0px 20px 6px #ccc;
+    box-shadow:         0px 0px 20px 6px #ccc;
+  }
+
+  .rak-fcb-logo {
+    background-image: url("../images/rak_fcb_logo/rakuten-fcb-logo.svg");
+    background-repeat: no-repeat;
+    height: 90px;
+    width: 160px;
+    margin-top: 14px;
+  }
+
+  .fcb-banner {
+    background-image: url("../images/fcb_banner/fcb-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    margin: auto;
+    min-height: 300px;
+    width: 1200px;
+  }
 }

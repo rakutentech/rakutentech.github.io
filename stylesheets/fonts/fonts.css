@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@font-face {
+  font-family: "RakutenGlobal-B";
+  src: url("./rakuten-global-font/RakutenGlobal-B.otf");
+}
+
+@font-face {
+  font-family: "RakutenGlobal-R";
+  src: url("./rakuten-global-font/RakutenGlobal-R.otf");
+}
