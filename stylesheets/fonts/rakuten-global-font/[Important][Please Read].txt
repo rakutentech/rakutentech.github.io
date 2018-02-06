@@ -1,0 +1,59 @@
+[English follows Japanese]
+
+--お読みください--
+
+
+このフォントは楽天グループ独自のフォントになります。
+楽天グループの許可を得ずに本フォントを使用することは禁止されています。
+関係者以外への受渡しは控えてください。
+
+■インストール方法
+各種OS／バージョンによってインストール方法が異なりますので、適切なインストール方法を確認してください。ここでは代表的なインストール方法をご案内しています。
+
+①スタートメニュー＞コントロールパネル＞フォント　でフォントフォルダを開く
+②フォントデータ（otfファイル）をフォントフォルダへドラッグ＆ドロップする
+③各種ツール（Office、Adobe Illustratorなど）で該当フォントが選択・使用できます。
+※バージョンによっては②の後にPCの再起動が必要な場合があります。
+
+■フォント情報
+このフォントは、楽天株式会社のデザイン指定により、株式会社モリサワが委託を受けて制作したOpenTypeフォントです。
+フォント名：
+　　Rakuten Global-R
+　　Rakuten Global-B
+　　Rakuten Global-R oblique
+　　Rakuten Global-B oblique
+お使いの環境／アプリケーションによっては、ハイフンが表示されない場合、スペースが表示されない場合がありますが、OpenTypeフォント名のルールによるものです。
+
+※2012年7月制作
+※2012年11月更新
+　上記更新時期以前に使用されていたバージョンは一度削除し、新たにダウンロードしてください。
+
+--Please Read--
+
+These fonts are Rakuten group's own property.
+Unauthorized usage of these fonts are prohibited.
+Fonts can only be used or shared under conditions where one fully understands font rules and takes responsibilities for any consequence caused by inadvertent or intentional unauthorized usage.
+(Sharing the fonts to unconcerned parties is prohibited.)
+
++How to Install the Fonts.
+The following is a typical font install step.
+Please check specific install steps according to OS / version you are using.
+
+1.Open font folder by going to Start Menu > Control Panel > Font.
+2.Drag and drop the font data (.oft file) to the font folder. 
+3.You can choose and use the fonts by your tool (Office, Adobe Illustrator and etc.).
+*You may need to reboot your computer after step 2 above.
+
++Font Information.
+These fonts are OpenType fonts which are made and produced by Morisawa Inc. under the design direction of Rakuten Inc., 
+Font Names:
+　　Rakuten Global-R
+　　Rakuten Global-B
+　　Rakuten Global-R oblique
+　　Rakuten Global-B oblique
+
+According to your OpenType font name settings, the font names may be displayed without “-” (bar) or ” ” (space). This does not affect font data inside. To see the letters covered by those fonts, please check the RakutenGlobal.pdf.
+
+*Developed in Jul 2012.
+*Updated in Nov 2012.
+  Please delete the previous data before the updated date above, and install newly.
