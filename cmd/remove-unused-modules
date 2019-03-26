@@ -1,0 +1,72 @@
+#!/usr/local/bin/node
+
+const fs = require("fs");
+const childProcess = require("child_process");
+
+childProcess.exec("./node_modules/.bin/elm-analyse", (e, out) => {
+    let file;
+    let unusedImports = {};
+    let unusedAliases = {};
+    for (let line of out.split("\n")) {
+        if (line.startsWith("-")) {
+            file = line.slice(2);
+            continue;
+        }
+        const matched1 = line.match(
+            /.*Unused import `.*at.*\(\((\d+),(\d+)\),\((\d+),(\d+)\)\)/
+        );
+        if (matched1) {
+            if (!unusedImports[file]) {
+                unusedImports[file] = [];
+            }
+            const [start, end] = [+matched1[1], +matched1[3]];
+            unusedImports[file].push({
+                start,
+                end
+            });
+        }
+        const matched2 = line.match(
+            /.*Unused import alias `.*at.*\(\((\d+),(\d+)\),\((\d+),(\d+)\)\)/
+        );
+        if (matched2) {
+            if (!unusedAliases[file]) {
+                unusedAliases[file] = [];
+            }
+            const [start, end] = [+matched2[1], +matched2[3]];
+            unusedAliases[file].push({
+                start,
+                end
+            });
+        }
+    }
+    for (let file in unusedImports) {
+        const contentArray = fs.readFileSync(file, "utf8").split("\n");
+        const ranges = unusedImports[file];
+        ranges.forEach(({
+            start,
+            end
+        }) => {
+            for (let i = start - 1; i < end; i++) {
+                console.log("Unused Import:", contentArray[i]);
+                contentArray[i] = null;
+            }
+        });
+        const content = contentArray.filter(s => s !== null).join("\n");
+        fs.writeFileSync(file, content);
+    }
+    for (let file in unusedAliases) {
+        const contentArray = fs.readFileSync(file, "utf8").split("\n");
+        const ranges = unusedAliases[file];
+        ranges.forEach(({
+            start,
+            end
+        }) => {
+            for (let i = start - 1; i < end; i++) {
+                console.log("Unused Alias:", contentArray[i]);
+                contentArray[i] = contentArray[i].replace(/ as ([^ ]*)/, "");
+            }
+        });
+        const content = contentArray.filter(s => s !== null).join("\n");
+        fs.writeFileSync(file, content);
+    }
+});
