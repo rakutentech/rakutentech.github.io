@@ -1,5 +1,0 @@
-#!/bin/bash
-printf "\n\e[0;32m🍣   Runnig elm-href...\e[0m\n\n"
-node_modules/.bin/elm-xref > cmd/unused_code_to_clean_up.txt
-printf "\n\e[0;32m   Check the file cmd/unused_code_to_clean_up.txt\e[0m\n\n"
-printf "\n\e[0;32m🍺   Done\e[0m\n\n"
