@@ -1,0 +1,4 @@
+#!/bin/bash
+printf "\n\e[0;32m🍣   Formatting...\e[0m\n\n"
+node_modules/.bin/elm-format src/ --yes
+printf "\n\e[0;32m🍺   Done\e[0m\n\n"
