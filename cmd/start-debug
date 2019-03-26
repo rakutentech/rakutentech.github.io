@@ -1,0 +1,4 @@
+#!/bin/bash
+printf "\n\e[0;32m🍣   Starting elm-live...\e[0m\n\n"
+rm -rf elm-stuff ; rm ~/.elm/0.19.0/package/*/*/*/*.dat
+node_modules/.bin/elm-live src/Internal/Main.elm --open=true --dir=docs --start-page=index.html --path-to-elm=node_modules/.bin/elm -- --output=docs/js/elm.js --debug

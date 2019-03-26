@@ -1,0 +1,6 @@
+#!/bin/bash
+printf "\n\e[0;32m🍣   Optimizing...\e[0m\n\n"
+rm -rf elm-stuff ; rm ~/.elm/0.19.0/package/*/*/*/*.dat
+node_modules/.bin/elm make src/Internal/Main.elm --output=docs/js/temp.js --optimize
+node_modules/.bin/uglifyjs docs/js/temp.js --compress 'pure_funcs="F2,F3,F4,F5,F6,F7,F8,F9,A2,A3,A4,A5,A6,A7,A8,A9",pure_getters,keep_fargs=false,unsafe_comps,unsafe' | node_modules/.bin/uglifyjs --mangle --output=docs/js/elm.js
+rm docs/js/temp.js
