@@ -53,6 +53,12 @@ repos =
     , { githubId = "viki-org"
       , label = "Rakuten Viki"
       }
+    , { githubId = "rakuten-nlp"
+      , label = "Rakuten NLP"
+      }
+    , { githubId = "Viber"
+      , label = "Rakuten Viber"
+      }
     ]
 
 
