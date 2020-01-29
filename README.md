@@ -10,20 +10,20 @@ The only prerequisite is to have Node.js installed. You can download it from htt
 
 After that, clone the repository with
 
-```
+```shell
 git clone https://github.com/rakutentech/rakutentech.github.io.git
 ```
 
 then move into the project folder and install the dependencies:
 
-```
+```shell
 cd rakutentech.github.io
-npm install
+yarn install
 ```
 
 now you are ready to run the development server with
 
-```
+```shell
 cmd/start
 ```
 
@@ -38,7 +38,7 @@ The main files that you may need to edit are in the src folder. If you want to m
 
 If you prefer to minify the Javascript file, remember to run this command before committing your modifications:
 
-```
+```shell
 cmd/optimize
 ```
 
@@ -46,7 +46,7 @@ cmd/optimize
 
 If you are debugging the application you may compile it in debug mode using the command
 
-```
+```shell
 cmd/start-debug
 ```
 
