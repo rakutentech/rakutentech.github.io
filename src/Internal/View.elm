@@ -62,10 +62,11 @@ attrsRow _ =
 
 repoCard : Model.Model -> Type.Repo -> Element msg
 repoCard model repo =
-    link (attrsRepoCard model)
-        { url = repo.html_url
-        , label = ViewRepo.view model 0 repo
-        }
+    el (attrsRepoCard model) <|
+        link [ width fill, height fill ]
+            { url = repo.html_url
+            , label = ViewRepo.view model 0 repo
+            }
 
 
 viewFirstOne : Model.Model -> List Type.Repo -> List (Element msg)
@@ -192,7 +193,7 @@ filterInputText model =
         , padding 20
         , centerX
         , inFront <|
-            el [ alignRight, moveLeft 30, moveDown 30 ] <|
+            el [ alignRight, moveLeft 30, moveDown 26 ] <|
                 if String.length model.filter > 0 then
                     Input.button []
                         { label = Icon.icon Icon.Close (Utils.c model .font) Conf.iconSize
@@ -219,9 +220,7 @@ filterInputText model =
             , placeholder =
                 Just <|
                     Input.placeholder
-                        [ Font.color <| Utils.c model .fontLight
-                        , moveDown 4
-                        ]
+                        [ Font.color <| Utils.c model .fontLight ]
                     <|
                         text (filterText model)
             , label = Input.labelHidden (filterText model)

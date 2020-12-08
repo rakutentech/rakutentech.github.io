@@ -18,13 +18,13 @@ then move into the project folder and install the dependencies:
 
 ```shell
 cd rakutentech.github.io
-yarn install
+npm install
 ```
 
 now you are ready to run the development server with
 
 ```shell
-cmd/start
+npm start
 ```
 
 this will download other dependencies, start a server and open a new page in the browser.
@@ -39,7 +39,7 @@ The main files that you may need to edit are in the src folder. If you want to m
 If you prefer to minify the Javascript file, remember to run this command before committing your modifications:
 
 ```shell
-cmd/optimize
+npm run optimize
 ```
 
 ## Debug mode
@@ -47,10 +47,10 @@ cmd/optimize
 If you are debugging the application you may compile it in debug mode using the command
 
 ```shell
-cmd/start-debug
+npm run debug
 ```
 
-After running this command, remember to run either `cmd/start` or `cmd/optimize` before submitting your modifications to production.
+After running this command, remember to run either `cmd/start` or `npm run optimize` before submitting your modifications to production.
 
 ## How the app works
 
