@@ -1,3 +1,0 @@
-#!/bin/bash
-printf "\n\e[0;32m🍣   Starting http://localhost:3000/...\e[0m\n\n"
-node_modules/.bin/elm-analyse --elm-format-path=node_modules/.bin/elm-format --serve --open

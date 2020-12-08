@@ -148,7 +148,7 @@ update msg model =
 
         Msg.ChangeFilter filter ->
             ( { model | filter = filter }
-            , Browser.Navigation.pushUrl model.key <|
+            , Browser.Navigation.replaceUrl model.key <|
                 CommonRoute.toStringAndHash
                     Route.conf
                 <|
