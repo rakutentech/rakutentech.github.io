@@ -38,7 +38,6 @@ attrsRepoCard model =
     , alignTop
     , Border.rounded 5
     , Background.color <| Utils.c model .cardBackground
-    , clip
     , Border.shadow { offset = ( 0, 2 ), size = 0, blur = 8, color = rgba 0 0 0 0.05 }
     , mouseOver <|
         if model.localStorage.nightMode then
